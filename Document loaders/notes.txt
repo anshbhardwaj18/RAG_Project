@@ -1,0 +1,57 @@
+Correlation vs Covariance in Statistics
+
+What is Covariance?
+
+Covariance measures how two variables change together.
+
+-   Positive covariance: both variables increase/decrease together.
+-   Negative covariance: one increases while the other decreases.
+-   Covariance near 0: no clear linear relationship.
+
+Formula: Cov(X,Y) = Σ[(Xi - X̄)(Yi - Ȳ)] / (n - 1)
+
+Limitations: - Depends on units. - Difficult to compare across datasets.
+
+What is Correlation?
+
+Correlation measures both the strength and direction of the
+relationship.
+
+Formula: Correlation = Cov(X,Y) / (σX × σY)
+
+Range: - +1 : Perfect positive relationship - 0 : No linear
+relationship - -1 : Perfect negative relationship
+
+Correlation vs Covariance
+
+  Feature      Covariance              Correlation
+  ------------ ----------------------- ----------------------
+  Measures     Direction               Direction + Strength
+  Range        Unlimited               -1 to +1
+  Unit         Depends on data units   Unitless
+  Comparison   Difficult               Easy
+
+Example
+
+Hours Studied vs Exam Marks: - Covariance > 0: More study generally
+means higher marks. - Correlation = 0.95: Strong positive relationship.
+
+When to Use
+
+Use Covariance to understand whether variables move together. Use
+Correlation to compare relationships and measure their strength.
+
+Interview Questions
+
+1.  What is covariance?
+2.  What is correlation?
+3.  Why is correlation preferred?
+4.  Can covariance be greater than 1? (Yes)
+5.  Can correlation be greater than 1? (No)
+
+Quick Revision
+
+-   Covariance = Direction of relationship.
+-   Correlation = Direction + Strength.
+-   Correlation is standardized.
+-   Correlation ranges from -1 to +1.
