@@ -15,7 +15,7 @@ docs = [
 embedding_model = MistralAIEmbeddings()
 
 vectorstore = Chroma.from_documents(
-    documents= docs,
+    documents= docs,  
     embedding= embedding_model,
     persist_directory= "chroma-db"
 )
