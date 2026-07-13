@@ -2,7 +2,13 @@ langchain
 langchain-core
 langchain-community
 langchain-google-genai
+langchain-mistralai
+
+chromadb
+arxiv
+
 python-dotenv
+
 fastapi
 uvicorn
 pydantic
