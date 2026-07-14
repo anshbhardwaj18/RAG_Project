@@ -7,6 +7,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_mistralai import MistralAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from dotenv import load_dotenv
+import os
+from pathlib import Path
 
 load_dotenv()
 
@@ -27,3 +29,8 @@ vectorstore = Chroma.from_documents(
     embedding= embedding_model,
     persist_directory= "chroma_db"
 )
+
+print("Total Chunks :", len(chunks))
+print("Stored Documents :", vectorstore._collection.count())
+print(os.getcwd())
+print(Path("chroma_db").resolve())
